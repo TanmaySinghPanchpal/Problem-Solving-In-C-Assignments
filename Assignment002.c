@@ -123,7 +123,7 @@ int series3(int N)
 // Q2 iv. Function to compute the sum of the first N terms of series 4 : s = 1/1 + 1/2 + 1/3 + ...
 double series4(int N)
 {
-    double sum = 0;
+    double sum = 0.0;
     for (int i = 1; i <= N; i++)
     {
         sum += (1.0 / i); // Using 1.0 instead of 1 to avoid integer division
@@ -285,7 +285,7 @@ int main()
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
             double sum_4 = series4(N);
-            printf("\tThe sum of the first %.4d terms is : %.3f\n", N, sum_4); // Sum upto 3 decimal places
+            printf("\tThe sum of the first %d terms is : %.3f\n", N, sum_4); // Sum upto 3 decimal places
         }
 
         else if (choice == 12)
