@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 // Q1 i. Function to calculate the minimum element of the array
-int Min_element(int arr[], int size)
+int Min_element(int arr[], int size) 
 {
     int min = arr[0];
     for (int i = 1; i < size; i++)
@@ -83,7 +83,6 @@ double Sum_of_Squares(int arr[], int size)
     double sum = 0;
     for (int i = 0; i < size; i++)
     {
-        // printf("%d\n",arr[i]*arr[i]);
         sum += arr[i] * arr[i];
     }
     return sum;
@@ -143,6 +142,7 @@ void Sequence(int N)
         printf(",");
         term *= 2;
     }
+    printf("\n");
 }
 
 // Q4 Function to compute the series s = 1 - 3 + 5 - 7 + 9 - ...
@@ -258,7 +258,7 @@ int main()
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
             int sum_1 = series1(N_terms);
-            printf("\tThe sum of the first %d terms is : %d", N_terms, sum_1);
+            printf("\tThe sum of the first %d terms is : %d\n", N_terms, sum_1);
         }
 
         else if (choice == 9)
@@ -267,7 +267,7 @@ int main()
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
             int sum_2 = series2(N_terms);
-            printf("\tThe sum of the first %d terms is : %d", N_terms, sum_2);
+            printf("\tThe sum of the first %d terms is : %d\n", N_terms, sum_2);
         }
 
         else if (choice == 10)
@@ -276,7 +276,7 @@ int main()
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
             int sum_3 = series3(N_terms);
-            printf("\tThe sum of the first %d terms is : %d", N_terms, sum_3);
+            printf("\tThe sum of the first %d terms is : %d\n", N_terms, sum_3);
         }
 
         else if (choice == 11)
@@ -285,7 +285,7 @@ int main()
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
             double sum_4 = series4(N);
-            printf("\tThe sum of the first %.4d terms is : %.3f", N, sum_4); // Sum upto 3 decimal places
+            printf("\tThe sum of the first %.4d terms is : %.3f\n", N, sum_4); // Sum upto 3 decimal places
         }
 
         else if (choice == 12)
