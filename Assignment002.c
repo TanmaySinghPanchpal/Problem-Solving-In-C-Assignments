@@ -293,7 +293,7 @@ int main()
             int N_terms; // Number of terms
             printf("\nEnter the number of terms for the sequence : ");
             scanf("\t%d", &N_terms);
-            Sequence(N);
+            Sequence(N_terms);
         }
 
         else if (choice == 13)
@@ -301,7 +301,7 @@ int main()
             int N_terms, sum; // Number of terms,sum
             printf("Enter the number of terms : ");
             scanf("\t%d", &N_terms);
-            sum = Alternating_series(N);
+            sum = Alternating_series(N_terms);
             printf("\tSum of the series upto %d terms = %d\n", N_terms, sum);
         }
 
@@ -313,4 +313,4 @@ int main()
     }
 
     return 0;
-}
+} 
