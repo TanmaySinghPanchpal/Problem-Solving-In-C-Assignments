@@ -68,8 +68,10 @@ int Is_factorial(int M)
     return 0; // M is not a factorial number
 }
 
-double Binomial_coefficient(int n, int r) {
-    if (r > n) {
+double Binomial_coefficient(int n, int r)
+{
+    if (r > n)
+    {
         printf("\nError : Since R cannot be greater than N");
         return -1.0;
     }
@@ -107,7 +109,8 @@ int main()
     scanf("%d", &r);
 
     double result = Binomial_coefficient(n, r);
-    if (result != -1.0) {
+    if (result != -1.0)
+    {
         printf("\nThe binomial coefficient %dC%d is : %.2f\n", n, r, result);
     }
     return 0;
