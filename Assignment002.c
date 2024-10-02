@@ -284,8 +284,8 @@ int main()
             int N_terms; // Number of terms
             printf("\nEnter the number of terms for the series : ");
             scanf("%d", &N_terms);
-            double sum_4 = series4(N);
-            printf("\tThe sum of the first %d terms is : %.3f\n", N, sum_4); // Sum upto 3 decimal places
+            double sum_4 = series4(N_terms);
+            printf("\tThe sum of the first %d terms is : %.3f\n", N_terms, sum_4); // Sum upto 3 decimal places
         }
 
         else if (choice == 12)
