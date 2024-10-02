@@ -52,6 +52,7 @@ double Xn_over_factorial(int x, int N)
     return result;
 }
 
+// 5. Function to check whether a number is a factorial number or not
 int Is_factorial(int M)
 {
     int i = 1;
@@ -68,6 +69,7 @@ int Is_factorial(int M)
     return 0; // M is not a factorial number
 }
 
+// 6. Function to calculate the binomial coefficient
 double Binomial_coefficient(int n, int r)
 {
     if (r > n)
