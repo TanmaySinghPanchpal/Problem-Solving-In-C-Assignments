@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 // Q1 i. Function to calculate the minimum element of the array
-int Min_element(int arr[], int size) 
+int Min_element(int arr[], int size)
 {
     int min = arr[0];
     for (int i = 1; i < size; i++)
@@ -146,20 +146,21 @@ void Sequence(int N)
 }
 
 // Q4 Function to compute the series s = 1 - 3 + 5 - 7 + 9 - ...
-int Alternating_series(int N) {
+int Alternating_series(int N)
+{
     int sum = 0;
     int term = 1;
     int sign = 1; // alternating sign
 
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= N; i++)
+    {
         sum += sign * term;
-        term += 2; // Incrementing the term by 2
+        term += 2;  // Incrementing the term by 2
         sign *= -1; // Alternating the sign
     }
 
     return sum;
 }
-
 
 int main()
 {
@@ -205,7 +206,6 @@ int main()
             int max_2 = Max_element(arr, N);
             printf("\n\tMaximum element in the array: %d\n", max_2);
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-
         }
 
         else if (choice == 3)
@@ -216,7 +216,6 @@ int main()
             printf("\n\tMinimum element in the array: %d\n", min_3);
             printf("\tMaximum element in the array: %d\n", max_3);
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-
         }
 
         else if (choice == 4)
@@ -225,7 +224,6 @@ int main()
             double mean = Mean_element(arr, N);
             printf("\n\tMean of the array: %.3f\n", mean); // Mean upto 3 decimal spaces
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-
         }
 
         else if (choice == 5)
@@ -233,7 +231,6 @@ int main()
             double variance = Variance(arr, N);
             printf("\n\tVariance of the numbers in the array : %.3f\n", variance); // Variance upto 3 decimal spaces
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-
         }
 
         else if (choice == 6)
@@ -241,7 +238,6 @@ int main()
             double sum_6 = Sum_of_Squares(arr, N);
             printf("\n\tSum of the squares of the numbers in the array : %.3f\n", sum_6); // Sum of squares upto 3 decimal spaces
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-    
         }
 
         else if (choice == 7)
@@ -249,7 +245,6 @@ int main()
             double harmonic_mean = Harmonic_mean(arr, N);
             printf("\n\tThe harmonic mean of the numbers in the array is : %.3f\n", harmonic_mean); // Harmonic mean upto 3 decimal spaces
             printf("\tThe time complexity of the developed algorithm is : O(n)\n");
-
         }
 
         else if (choice == 8)
@@ -313,4 +308,4 @@ int main()
     }
 
     return 0;
-} 
+}
