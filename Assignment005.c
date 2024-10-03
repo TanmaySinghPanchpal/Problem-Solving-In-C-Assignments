@@ -8,7 +8,9 @@
 
 #include <stdio.h>
 #include <string.h> 
-// Function to count the number of digits of a positive integer
+#include <stdlib.h>
+
+// 1. Function to count the number of digits of a positive integer
 int Digits_counter(int n)
 {
     int counter = 0;
@@ -20,7 +22,7 @@ int Digits_counter(int n)
     return counter;
 }
 
-// Function to produce the sum of digits of a positive integer
+// 2. Function to produce the sum of digits of a positive integer
 int Sum_of_digits(int n)
 {
     int sum = 0;
@@ -32,7 +34,7 @@ int Sum_of_digits(int n)
     return sum;
 }
 
-// Function to convert a set of 'N' digits into a single decimal integer
+// 3. Function to convert a set of 'N' digits into a single decimal integer
 int Digits_into_integer(int digits[], int N)
 {
     int result = 0;
@@ -43,7 +45,7 @@ int Digits_into_integer(int digits[], int N)
     return result;
 }
 
-// Function to convert a positive integer into its reverse order
+// 4. Function to convert a positive integer into its reverse order
 int Reverse_integer(int n)
 {
     int reverse = 0;
@@ -56,8 +58,8 @@ int Reverse_integer(int n)
     return reverse;
 }
 
-// Functions to convert a positive & negative integer
-// (as a character string) into its equivalent decimal form
+// 5. Functions to convert a positive & negative integer
+//    (as a character string) into its equivalent decimal form
 int String_to_decimal(char str[])
 {
     int sign = 1;
@@ -75,11 +77,11 @@ int String_to_decimal(char str[])
     return sign * decimal;
 }
 
-// Function to convert a positive number in decimal radix
-// and convert it into a positive base B number
+// 6. Function to convert a positive number in decimal radix
+//    and convert it into a positive base B number
 // char* Decimal_to_baseB(int n, int B) {
 //     char digits[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     char result[64] = ""; // assume max 64 characters needed
+//     char result[64] = ""; // Assume max 64 characters needed
 //     while (n > 0) {
 //         int digit = n % B;
 //         if (B > 10) {
@@ -129,11 +131,8 @@ int main()
 
         else if (choice == 3)
         {
-            printf("\nEnter a positive integer : ");
-            scanf("%d", &num);
-
             int N;
-            printf("Enter the number of digits : ");
+            printf("\nEnter the number of digits : ");
             scanf("%d", &N);
 
             int digits[N];
@@ -163,17 +162,17 @@ int main()
             scanf("%19s", str);
 
             int decimal = String_to_decimal(str);
-            printf("The decimal equivalent is 1 : %d\n", decimal);
+            printf("The decimal equivalent is : %d\n", decimal);
         }
 
         // else if (choice == 6)
         // {
         //     int n;
-        //     printf("\nEnter a positive decimal number: ");
+        //     printf("\nEnter a positive decimal number : ");
         //     scanf("%d", &n);
 
         //     int B;
-        //     printf("Enter the base B (1 < B ≤ 36): ");
+        //     printf("Enter the base B (1 < B <= 36) : ");
         //     scanf("%d", &B);
 
         //     if (B < 2 || B > 36) {
@@ -182,8 +181,8 @@ int main()
         //     }
 
         //     char* baseB = Decimal_to_baseB(n, B);
-        //     printf("The base %d representation is: %s\n", B, baseB);
-        //     free(baseB); // free the dynamically allocated memory
+        //     printf("The base %d representation is : %s\n", B, baseB);
+        //     free(baseB); // Free the dynamically allocated memory
         // }
 
         else
