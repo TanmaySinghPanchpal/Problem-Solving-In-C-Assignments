@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to perform sequendtial search
-int sequendtialSearch(int arr[], int size, int value)
+int Sequential_Search(int arr[], int size, int value)
 {
     for (int i = 0; i < size; i++)
     {
@@ -14,7 +14,7 @@ int sequendtialSearch(int arr[], int size, int value)
 }
 
 // Function to perform binary search
-int binarySearch(int arr[], int size, int value)
+int Binary_Search(int arr[], int size, int value)
 {
     int begin = 0;
     int end = size - 1;
@@ -55,7 +55,7 @@ int main()
     printf("\nEnter the number to search in the array : ");
     scanf("%d",&value);
 
-    int s_search = sequendtialSearch(arr, size, value);
+    int s_search = Sequential_Search(arr, size, value);
     if (s_search != -1)
     {
         printf("\nSequential Search :\nThe element %d was found at index %d\n", value, s_search);
@@ -64,7 +64,6 @@ int main()
     {
         printf("\nSequential Search :\nThe element %d was not found\n", value);
     }
-
 
     // Using bubble sort
     for (int i = 0; i < N - 1; i++) {
@@ -77,7 +76,7 @@ int main()
         }
     }
 
-    int b_search = binarySearch(arr, size, value);
+    int b_search = Binary_Search(arr, size, value);
     if (b_search != -1)
     {
         printf("\nBinary Search :\nThe element %d was found at index %d\n", value, b_search);
