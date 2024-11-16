@@ -135,7 +135,7 @@ void Merge_Sort(int arr[], int left, int right)
     }
 }
 
-void printArray(int arr[], int size)
+void Print_Array(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
@@ -174,27 +174,27 @@ int main()
         {
             Bubble_Sort(arr, n);
             printf("Sorted array using Bubble Sort:\n");
-            printArray(arr, n);
+            Print_Array(arr, n);
         }
 
         else if (choice == 2)
         {
             Insertion_Sort(arr, n);
             printf("Sorted array using Insertion Sort:\n");
-            printArray(arr, n);
+            Print_Array(arr, n);
         }
 
         else if (choice == 3)
         {
             Selection_Sort(arr, n);
             printf("Sorted array using Selection Sort:\n");
-            printArray(arr, n);
+            Print_Array(arr, n);
         }
         else if (choice == 4)
         {
             Merge_Sort(arr, 0, n - 1);
             printf("Sorted array using Merge Sort:\n");
-            printArray(arr, n);
+            Print_Array(arr, n);
         }
 
         else
