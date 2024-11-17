@@ -13,7 +13,7 @@ int main() {
     FILE* file;
     int count[256] = {0};
     int character;
-    int Character_Counter, Word_Counter, inWord, Paragraph_Counter = 0;
+    int Character_Counter, Word_Counter, In_Word, Paragraph_Counter = 0;
 
     file = fopen("TheTimeMacharacterine.txt","r");
     if (file == NULL){
@@ -27,12 +27,12 @@ int main() {
 
         //counting the words
         if (isspace(character)){
-            if (inWord){
+            if (In_Word){
                 Word_Counter++;
-                inWord = 0;
+                In_Word = 0;
             }
         } else {
-            inWord = 1;
+            In_Word = 1;
         }
 
         //counting the paragraphs
@@ -45,7 +45,7 @@ int main() {
     }
 
     //if file ends in a word, then counting it:
-    if (inWord) {
+    if (In_Word) {
         Word_Counter++;
     }
 
